@@ -50,7 +50,7 @@ hermes skills list
 
 ## Schedule it
 
-The skill does nothing on its own; the evening and night runs are cron jobs. See [cron-recipes.md](cron-recipes.md).
+The skill does nothing on its own; the evening and night runs are cron jobs, attached with `--skill inner-life`. See [cron-recipes.md](cron-recipes.md).
 
 ## Remove it
 

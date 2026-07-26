@@ -48,7 +48,9 @@ Then ask the agent to set up its inner life. It copies one template and creates 
 ```bash
 hermes cron create "0 22 * * *" \
   "Run the inner-life evening routine: read inner-life/state.md, write today's journal entry, refresh the state summary in native memory, then prune stale state entries." \
-  --name "inner-life evening"
+  --name "inner-life evening" \
+  --skill inner-life \
+  --workdir ~/.hermes/workspace
 ```
 
 Full recipes, including the night run and the weekly rollup, are in [docs/cron-recipes.md](docs/cron-recipes.md).
