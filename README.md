@@ -26,6 +26,25 @@ Hermes has memory, self-improving skills, and a scheduler. This skill does not c
 
 Durable facts stay in `memory`. Reusable workflows stay in `skill_manage`. What was missing is the part in between — a sense of the current stretch, and somewhere to put a thought that isn't a task.
 
+## What it writes, and where
+
+This skill keeps a record. Worth knowing what that means before turning it on.
+
+| Where | What | Reaches later sessions |
+|---|---|---|
+| `inner-life/state.md` | dated one-line facts about how work is going | only when a run opens it |
+| `inner-life/journal/` | one entry per day | no — it sits on disk unread |
+| `inner-life/dreams/` | free thinking, not about your data | no |
+| native memory | two or three lines, rewritten each evening | **yes — in the system prompt of every session** |
+
+The last row is the whole mechanism and the whole caveat. Everything else is local and inert; the summary is injected into every session that follows, including unrelated ones and, on a shared host, other people's.
+
+The skill is written to keep that channel narrow. State records *that* something happened, not what was said in it. The summary carries how the work has been going, not who you are — no credentials, no personal details, no third parties, nothing shared in confidence. The rules live in [`references/state.md`](skills/inner-life/references/state.md) and [`references/journal.md`](skills/inner-life/references/journal.md), and they're worth reading before the first run, since they're what the agent follows.
+
+Nothing here runs on its own. There is no background hook: the evening and night runs are cron jobs you create, and the skill writes when it's asked to.
+
+To stop it, uninstall the skill. To erase what it wrote, delete `inner-life/` and clear the summary from memory — uninstalling doesn't do that for you.
+
 ## Install
 
 As a tap:

@@ -59,3 +59,12 @@ hermes skills uninstall inner-life
 ```
 
 This removes the skill, not the agent's writing. `inner-life/state.md`, the journal, and the dreams stay in the working directory — delete them separately if you want them gone.
+
+Two things outlive the uninstall and have to be cleared by hand:
+
+```bash
+rm -rf ~/.hermes/workspace/inner-life     # or wherever --workdir pointed
+hermes cron list                          # remove the inner-life jobs
+```
+
+The state summary also stays in native memory, where it keeps reaching every session until it's replaced. Ask the agent to clear the inner-life summary from memory, or edit `~/.hermes/memories/MEMORY.md` directly.

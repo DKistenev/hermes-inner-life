@@ -26,6 +26,21 @@ Write entries as things happen, not in a batch at the end of the day. An entry w
 
 Keep entries short. One line, one thing. If it needs a paragraph, it belongs in the evening journal.
 
+## What not to record
+
+The instruction to record facts rather than feelings is not an instruction to record everything. This file is written today and read back in a month, and the shortest version of an entry is almost always the useful one.
+
+Leave out:
+
+- Credentials of any kind — keys, tokens, passwords, connection strings. There is never a version of an entry that needs one.
+- Personal details about the user or anyone else: health, employment, money, relationships, legal matters, where they are. If it came up in conversation, it came up in conversation; it does not need a dated line.
+- Anything said in confidence, whether or not it was labelled that way.
+- The contents of what was worked on. `long call about the deploy pipeline` is the entry. What was actually said in it is not.
+
+The test is simple: an entry should record **that something happened and roughly what kind of thing it was**, enough to notice a pattern later. It should not preserve the substance. `2026-07-22 — long call about deploys, unhurried` does the whole job. Adding what the user disclosed during that call adds nothing to the pattern and keeps it around for a month.
+
+When in doubt, write the vaguer line. Recency is the signal here, and a vague dated entry carries the signal just as well as a specific one.
+
 ## Which section
 
 | Section | What goes here | Example |

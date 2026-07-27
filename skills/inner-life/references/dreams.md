@@ -39,6 +39,8 @@ Follow the thought where it actually goes, including into a dead end.]
 
 300–500 words. One thought followed to its end beats five touched in passing.
 
+A dream starts from state but isn't about the user. It takes a preoccupation and thinks about the shape of it — the problem, the pattern, the constraint. Quoting the day back, or reasoning about the user personally, turns free thinking into a file about someone, which is neither the point nor safe to accumulate.
+
 The title matters more than it looks: it is what tomorrow night reads to avoid repeating itself. Make it specific. *What if state kept no history at all* is a usable title; *Thoughts on state* is not.
 
 **Worth keeping** is allowed to be empty. Most nights it will be, and that is the honest outcome of thinking freely.

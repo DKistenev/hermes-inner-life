@@ -11,6 +11,8 @@ Four steps, in this order:
 3. Refresh the state summary in native memory.
 4. Prune `state.md` according to its aging rules.
 
+These four steps touch three things and nothing else: `state.md`, today's journal file, and the state summary in native memory. Step 4 removes lines from `state.md` only, and only the ones its aging rules cover — past journal entries and dreams are never rewritten or deleted, and neither is anything in memory that this skill did not put there.
+
 **Step 3 is the one that must not be skipped.** The journal is not loaded into future sessions — it sits on disk and nobody reads it. Native memory is injected into the system prompt at the start of every session. An evening that writes a beautiful entry and leaves the summary untouched has changed nothing about tomorrow.
 
 ## Entry format
@@ -49,7 +51,7 @@ That is a complete entry. Filler written to satisfy a schedule makes the whole r
 
 ## The memory summary
 
-Hermes injects `MEMORY.md` into the system prompt as a frozen snapshot at the start of every session, with a limit of about 2,200 characters. That makes it the only channel that reaches tomorrow's work — and a small one.
+Native memory is injected into the system prompt as a frozen snapshot at the start of every session, and it is small — on the order of two thousand characters. That makes it the only channel that reaches tomorrow's work, and a narrow one.
 
 Use the `memory` tool to **rewrite** the state summary, not to append to it. Two or three sentences, replaced whole each evening:
 
@@ -70,6 +72,21 @@ Notice what that does: it carries the situation and one changed behavior, in pla
 | anything that should shape tomorrow | anything kept only for the record |
 
 Never move long context into native memory. The limit is small, and prose spent there displaces something that mattered more.
+
+### What never goes into the summary
+
+The journal stays on disk. The summary does not — it lands in the system prompt of every session that follows, including sessions about unrelated work and, on a shared host, sessions belonging to someone else. It is the one thing this skill writes that travels.
+
+Keep it out of the summary entirely:
+
+- credentials, tokens, keys, anything that would be a secret if leaked
+- personal facts about the user or a third party — health, employment, money, relationships, location, legal matters
+- anything shared in confidence, or that only makes sense with the day's context around it
+- names of people who are not the user
+
+Write about the work and the agent's own footing in it: what has been repeating, what changed in how it approaches things, what is still open. That is what tomorrow needs. Who said what yesterday is not.
+
+Before saving, read the two or three lines back as if they appeared in an unrelated session a month from now, in front of someone else. If any part of that would be wrong, cut it — the summary is not the last copy of anything, the journal still has the full day.
 
 ## Weekly rollup
 
