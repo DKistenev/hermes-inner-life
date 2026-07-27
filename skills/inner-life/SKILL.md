@@ -3,6 +3,7 @@ name: inner-life
 description: Use when explicitly asked to run the inner-life evening or night routine, to record something in inner-life state, or to read back the journal. Writes dated notes under inner-life/ and replaces a short summary in native memory, which is injected into later sessions.
 version: 1.1.0
 author: DKistenev
+license: MIT-0
 metadata:
   hermes:
     tags: [journal, dreams, self-reflection, continuity, memory]
