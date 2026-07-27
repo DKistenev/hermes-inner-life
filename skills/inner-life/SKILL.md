@@ -7,6 +7,9 @@ license: MIT-0
 metadata:
   hermes:
     tags: [journal, dreams, self-reflection, continuity, memory]
+  openclaw:
+    emoji: 🌙
+    homepage: https://github.com/DKistenev/hermes-inner-life
 ---
 
 # Inner Life
